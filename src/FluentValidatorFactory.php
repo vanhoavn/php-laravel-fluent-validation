@@ -22,7 +22,7 @@ class FluentValidatorFactory extends LaravelValidatorFactory
     public function make(array $data, array $rules, array $messages = [], array $customAttributes = [])
     {
         $rules = array_map(function ($rule) {
-            return $rule instanceof IRule ? strval($rule) : $rule;
+            return $rule instanceof IRule ? $rule->toArray() : $rule;
         }, $rules);
 
         return parent::make($data, $rules, $messages, $customAttributes);
