@@ -142,13 +142,13 @@ trait SimpleRules
     /**
      * The field under validation must pass custom validation rule.
      *
-     * @param string $customRule Custom rule name
+     * @param string|Illuminate\Contracts\Validation\Rule $customRule Custom rule name
      * @return GenericRuleSet
      * @throws ConfigurationException
      * @see https://laravel.com/docs/5.4/validation#custom-validation-rules
      * @see \Illuminate\Validation\Factory::extend
      */
-    public function custom(string $customRule): GenericRuleSet
+    public function custom($customRule): GenericRuleSet
     {
         if (!Config::get('validation.allow_custom', false)) {
             throw new ConfigurationException("Custom validation rules are disabled. "
