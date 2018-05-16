@@ -78,4 +78,15 @@ class DateRuleSet extends RuleSet
     {
         return $this->appendIfNotExists("before_or_equal:$date");
     }
+
+    /**
+     * The field under validation must be a value with given format.
+     *
+     * @param string $date_format The format to be matched
+     * @return $this|static
+     */
+    public function dateFormat($date_format)
+    {
+        return $this->appendIfNotExists("dateFormat:$date_format");
+    }
 }

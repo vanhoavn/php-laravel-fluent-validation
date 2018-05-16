@@ -33,6 +33,7 @@ use Illuminate\Support\Str;
  * @method DateRuleSet afterOrEqual(Carbon|string $date) The field under validation must be a value after or equal to the given date. For more information, see the after rule.
  * @method DateRuleSet before(Carbon|string $date) The field under validation must be a value preceding the given date. The dates will be passed into the PHP strtotime function.
  * @method DateRuleSet beforeOrEqual(Carbon|string $date) The field under validation must be a value preceding or equal to the given date. The dates will be passed into the PHP strtotime function.
+ * @method DateRuleSet dateFormat(string $date_format) The field under validation must be a value with given format.
 
  * @method NumericRuleSet digits($length) The field under validation must be numeric and must have an exact length of value.
  * @method NumericRuleSet digitsBetween($minLength, $maxLength) The field under validation must have a length between the given min and max.
