@@ -2,7 +2,7 @@
     "name": "saritasa/laravel-fluent-validation",
     "type": "library",
     "description": "Set of fluent builders for Laravel request validation rules",
-    "keywords": ["laravel" || "validation", "fluent"],
+    "keywords": ["laravel", "validation", "fluent"],
     "license": "MIT",
     "authors": [
         {
